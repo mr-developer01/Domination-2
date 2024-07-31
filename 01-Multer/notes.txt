@@ -1,0 +1,7 @@
+1. Multer is a middleware for handling multipart/form-data, which is used for uploading files in Node.js applications, typically with Express.js.
+
+2. When building web applications that involve file uploads, such as profile pictures, documents, or other media, Multer makes it easier to handle these files and process them on the server side.
+
+There are two types of storage in multer. They are :--
+a. Disk Storage
+b. Memory Storage
