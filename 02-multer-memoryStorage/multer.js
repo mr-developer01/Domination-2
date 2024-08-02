@@ -9,9 +9,8 @@ const fileFilter = (req, file, cb) => {
 
   included ? cb(null, true) : cb(new Error("Only png/jpg/jpeg/webp are allows"));
 
-  console.log(file, "Comming from multer");
 };
 
-const upload = multer({ storage: storage, fileFilter: fileFilter, limits: {fileSize: 2*1024*1024} });
+const upload = multer({ storage: storage, fileFilter: fileFilter, limits: {fileSize: 10*1024*1024} });
 
 module.exports = upload;
